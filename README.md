@@ -1,32 +1,61 @@
 # Radian Resources
 
-An npm monorepo for static design assets maintained by Radian OS. Each asset
-collection is published as a public package under the `@radianos` scope and can
-be consumed directly from npm or a CDN such as jsDelivr.
+<p align="center">
+  <a href="https://radianos.com">
+    <img src="https://raw.githubusercontent.com/Radian-os/radian-resources/main/packages/brand-logos/src/radian.svg" alt="Radian logo" width="120" height="120" />
+  </a>
+</p>
 
-## Packages
+<p align="center">
+  <strong>The official static marketing and UI asset hub for the Radian Design System.</strong><br />
+  High-quality, optimized, free design assets served directly via a global CDN.
+</p>
 
-- `@radianos/avatars` — transparent PNG avatars
-- `@radianos/brand-logos` — brand logo SVGs
-- `@radianos/country-flags` — country flag SVGs
-- `@radianos/file-icons` — file type SVG icons
+<p align="center">
+  <a href="https://github.com/Radian-os/radian-resources/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Radian-os/radian-resources?style=flat-square" alt="License" /></a>
+  <a href="https://radianos.com"><img src="https://img.shields.io/badge/design_system-Radian-blue?style=flat-square" alt="Radian Design System" /></a>
+  <a href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/cdn-jsDelivr-orange?style=flat-square" alt="jsDelivr CDN" /></a>
+</p>
 
-## Install
+---
 
-```sh
-pnpm install
-```
+## ⚡ Overview
 
-## Publish
+[Radian](https://radianos.com) is an open-source React component library built on Radix UI and Tailwind CSS.
 
-Authenticate with npm, then publish every workspace package:
+**Radian Resources** (`radian-resources`) is a dedicated public repository for hosting and serving Radian's static design assets—such as user avatars, brand logos, country flags, and file-type icons. 
 
-```sh
-pnpm publish:packages
-```
+By leveraging the free, global **jsDelivr CDN**, developers can hotlink these assets directly in their production applications with zero bandwidth costs and ultra-low latency.
 
-Assets are available from each package's `src` directory. For example:
+---
+
+## 🚀 How It Works (CDN Hotlinking)
+
+You do **not** need to clone this repository or install npm packages to use these assets. All assets are hotlinkable directly from your application using the following base CDN URL format:
 
 ```text
-https://cdn.jsdelivr.net/npm/@radianos/avatars@1.0.0/src/1.png
+https://cdn.jsdelivr.net/gh/Radian-os/radian-resources@main/packages/{package-name}/src/{file}
 ```
+
+- **`{package-name}`**: The subfolder name under `packages/` (e.g., `avatars`, `brand-logos`).
+- **`{file}`**: The filename of the asset (e.g., `1.png`, `radian.svg`).
+
+---
+
+## 📦 Available Assets
+
+This repository contains the following asset collections. Click on a category name to view its detailed documentation, exact asset lists, and integration examples.
+
+| Asset Category | Directory / Documentation | Description |
+| :--- | :--- | :--- |
+| **Avatars** | [packages/avatars](./packages/avatars/README.md) | 200 transparent, high-quality PNG user avatars for UI mocks. |
+| **Brand Logos** | [packages/brand-logos](./packages/brand-logos/README.md) | Scalable SVG logos for popular brands and integrations. |
+| **Country Flags** | [packages/country-flags](./packages/country-flags/README.md) | Optimized SVG country flags for country selectors and user profiles. |
+| **File Icons** | [packages/file-icons](./packages/file-icons/README.md) | Consistent, modern SVG file-type icons. |
+
+---
+
+## 📄 License
+
+All assets in this repository are licensed under the MIT License unless otherwise specified. Feel free to use them in both commercial and personal projects.
+
