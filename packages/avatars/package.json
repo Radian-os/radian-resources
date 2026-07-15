@@ -1,0 +1,15 @@
+{
+  "name": "@radianui/avatars",
+  "version": "1.0.0",
+  "description": "Free transparent PNG avatars for anyone to use.",
+  "main": "src/",
+  "exports": {
+    "./*": "./src/*"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

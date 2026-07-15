@@ -1,0 +1,15 @@
+{
+  "name": "@radianui/country-flags",
+  "version": "1.0.0",
+  "description": "Free country flag SVG resources for anyone to use.",
+  "main": "src/",
+  "exports": {
+    "./*": "./src/*"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
